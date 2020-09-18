@@ -8,7 +8,9 @@ const App: React.FC = () => {
       <div className="Header">
         <NumberDisplay value={1} />
         <div className="Face">
-          <span style={{ color: 'yellow' }}> ☺</span>
+          <span role="img" aria-label="face" style={{ color: 'yellow' }}>
+            ☺
+          </span>
         </div>
         <NumberDisplay value={0} />
       </div>
