@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NumberDisplay from '../NumberDisplay';
 import './App.scss';
+import { generateCells } from '../../utils';
 
 const App: React.FC = () => {
+  const [cells, useCells] = useState(generateCells());
   return (
     <div className="App">
       <div className="Header">
